@@ -1,0 +1,165 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #eee;
+}
+  
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.spacing {
+  padding: 2rem;
+  margin: 0.5rem auto;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.book-list li {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.25rem;
+  border: 1px solid #880e4f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  color: #880e4f;
+}
+
+.book-details {
+  min-height: 10rem;
+  height: 100%;
+  color: #880e4f;
+}
+
+form {
+  background: #fff;
+  padding: 1.25rem;
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.field {
+  display: grid;
+  grid-gap: .8rem;
+  padding: 0.2rem;
+  margin: 0 auto;
+}
+
+  
+form select, form input {
+  padding: 0.8rem;
+}
+  
+button {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: #ad1457;
+  border: 0;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+
+@media (min-width: 600px) {
+  .main {
+  padding: 0px;
+  width: 60%;
+  height: 100%;
+  }
+
+  .book-list {
+  padding: 0;
+  }
+
+  .book-list li {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.25rem;
+    border: 1px solid #880e4f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    color: #880e4f;
+  }
+
+  .form-container {
+  width: 50%;
+  overflow: hidden;
+  }
+
+  form {
+  background: #fff;
+  padding: 1.25rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  }
+
+  .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .8rem;
+  }
+
+  label {
+  text-align: right;
+  padding: 0.25rem;
+  }
+
+
+  form select, form input {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  }
+
+  button {
+  color: #fff;
+  font-size: 1.5em;
+  background-color: #ad1457;
+  border: 0;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.8rem;
+  border-radius: 0.25rem;
+  }
+
+  .book-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #ad1457;
+  padding: 2rem;
+  overflow: hidden;
+  box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  }
+
+}
